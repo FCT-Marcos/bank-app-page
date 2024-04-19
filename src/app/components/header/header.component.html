@@ -1,0 +1,22 @@
+<header class="p-3 mb-3 border-bottom bg-gray-900 text-indigo-600">
+  <div class="container">
+    <div class="d-flex flex-wrap align-items-center justify-content-center justify-content-lg-start">
+      <h1 class="h1 pr-3">{{ title }}</h1>
+
+      <ul class="nav col-12 col-lg-auto me-lg-auto mb-2 justify-content-center mb-md-0">
+        <li><a class="nav-link px-2 link-body-emphasis text-white hover:bg-indigo-700">Accounts</a></li>
+      </ul>
+
+      <div class="dropdown text-end">
+        <a href="#" class="d-block link-body-emphasis text-decoration-none dropdown-toggle text-white h4" data-bs-toggle="dropdown" aria-expanded="false">
+          <i class="bi bi-person-circle text-white h4"></i>
+        </a>
+        <ul class="dropdown-menu text-small text-white">
+          <li><a class="dropdown-item" routerLink="/profile">Profile</a></li>
+          <li><hr class="dropdown-divider"></li>
+          <li><a class="dropdown-item" (click)="logout()">Log out</a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</header>
